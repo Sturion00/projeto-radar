@@ -9,7 +9,7 @@
     --cor-1: #161822;
     --cor-2: #0d1d3d;
     --cor-3: #1b4965;
-    --cor-4: #dde4eb;
+    --cor-4: #a9b2bb;
     --cor-5: #86733d;
     /*Fonte Sigokae - variante 'Demo'*/
     --fonte-tema: 'Sigokae Demo';
@@ -23,10 +23,39 @@
 
 body{
     background-color: var(--cor-1);
-    color: var(--cor-5);
+    color: var(--cor-4);
 }
 
 header {
+    border: solid 1px red;
+
+    text-align: center;
+    display: block;
+    justify-content: space-between;
+}
+
+header>h1 {
+    border: solid 1px red;
+
+    font-size: 2.5em;
+    color: var(--cor-5);
+    font-family: var(--fonte-tema);
+    padding: 5px;
+}
+
+nav.navegador {
+    border: solid 1px red;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegador>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,4 +76,4 @@ div.cabecalho {
     border: solid 1px red;
     padding: 5px;
     font-family: var(--fonte-sec);
-}
+}*/
