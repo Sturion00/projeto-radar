@@ -26,7 +26,7 @@ body{
     font-family: "Fira Code", monospace;
     color: var(--cor-4);
     background: linear-gradient(#222533, #161822);
-    height: 95vh;
+    height: 100vh;
 }
 
 header {
@@ -65,27 +65,50 @@ nav.navegador {
 
 main {
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 5px;
     justify-content: center;
     align-items: center;
     
 }
-    article.container {
-    border: 1px solid blue;
+
+article.container {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
     border-radius: 20px;
     margin: 2%;
     padding: 2%;
     display: flex;
     width: 95%;
     height: 70vh;
-
 }
+
+div.barra-procura {
+    /* border: 1px solid rgb(194, 40, 199); */
+    height: 5%;
+    gap: 5px;
+}
+
+div>input#txtproc {
+    width: 200px;
+}
+
+div>input {    
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 
+}
+
 
 footer.rodape {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 10vh;
     display: flex;
     justify-content: center;
