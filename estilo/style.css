@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Fira Code", monospace;
     color: var(--cor-4);
     background: linear-gradient(#222533, #161822);
@@ -64,7 +64,7 @@ nav.navegador {
 }
 
 article.card-principal {
-    display: flex;
+    border: 1px solid red;
     justify-content: center;
     border-radius: 20px;
     margin: 2%;
@@ -75,7 +75,7 @@ article.card-principal {
 }
 
 div.barra-procura {
-    /* border: 1px solid rgb(194, 40, 199); */
+    border: 1px solid rgb(194, 40, 199);
     height: 5%;
     gap: 5px;
     margin: 20px 0;
@@ -99,6 +99,10 @@ div>input#btn-proc {
 
 div>input#btn-proc:hover {
     opacity: 50%;
+}
+
+div.info {
+    border: 1px solid white;
 }
 
 footer.rodape {
