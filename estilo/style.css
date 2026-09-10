@@ -69,29 +69,27 @@ main {
     padding: 5px;
     justify-content: center;
     align-items: center;
+    height: 80vh;
     
 }
 
 article.container {
     display: flex;
     justify-content: center;
-    /* border: 1px solid blue; */
     border-radius: 20px;
     margin: 2%;
     padding: 2%;
     display: flex;
     width: 95%;
-    height: 70vh;
+    height: 95%;
+    background: linear-gradient(#161822, #222533);
 }
 
 div.barra-procura {
     /* border: 1px solid rgb(194, 40, 199); */
     height: 5%;
     gap: 5px;
-}
-
-div>input#txtproc {
-    width: 200px;
+    margin-top: 30px;
 }
 
 div>input {    
@@ -100,10 +98,19 @@ div>input {
     padding: 10px;
     border-radius: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 
 }
 
+div>input#txtproc {
+    width: 200px;
+}
+
+div>input#btn-proc {
+    transition: opacity .2s;
+}
+
+div>input#btn-proc:hover {
+    opacity: 50%;
+}
 
 footer.rodape {
     font-family: Arial, Helvetica, sans-serif;
@@ -113,4 +120,15 @@ footer.rodape {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--cor-5);
+    transition: color;
+    transition: opacity .2s;
+}
+
+.rodape a:hover {
+    opacity: 70%;
 }
