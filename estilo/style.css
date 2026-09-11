@@ -116,6 +116,7 @@ div.previsao-principal {
 div#info-principal {
     background-color: var(--cor-6);
     border-radius: 10px;
+    padding: 10px;
 }
 
 div.icon-prev#info-principal {
@@ -139,6 +140,7 @@ div#info-secundaria {
     background-color: var(--cor-6);
     text-align: center;
     border-radius: 10px;
+    padding: 10px;
 }
 
 p.api-info {
