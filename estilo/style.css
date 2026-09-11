@@ -85,7 +85,7 @@ div.barra-procura {
     gap: 5px;
 }
 
-div>input {    
+div>form>input {    
     border: none;
     outline: none;
     padding: 10px;
@@ -93,15 +93,15 @@ div>input {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-div>input#txtproc {
+div>form>input#txtproc {
     width: 200px;
 }
 
-div>input#btn-proc {
+div>form>input#btn-proc {
     transition: opacity .2s;
 }
 
-div>input#btn-proc:hover {
+div>form>input#btn-proc:hover {
     opacity: 50%;
 }
 
@@ -121,6 +121,9 @@ div#info-principal {
 
 div.icon-prev#info-principal {
     text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 div.resumo-principal#info-principal {

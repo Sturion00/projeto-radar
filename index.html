@@ -22,15 +22,19 @@
     </header>
     <article class="card-principal">
         <div class="barra-procura">
-            <input type="search" name="txtproc" placeholder="Marialva" id="txtproc" value="">
-            <input type="button" value="Buscar" id="btn-proc">
+            <form>
+                <input type="search" name="txtproc" placeholder="Marialva" id="txtproc">
+                <input type="button" value="Buscar" id="btn-proc" onclick="procurar()">
+            </form>
         </div>
         <div class="previsao-principal">
             <div class="icon-prev" id="info-principal">
                 <p>[--ICONE--]</p>
             </div>
             <div class="resumo-pricipal" id="info-principal">
-               <p>[--RESUMO--]</p>
+               <p>[--ENSOLARADO--]</p>
+               <p>[--30.5ª--]</p>
+               <p>[--HUMIDADE: 51%--]</p>
             </div>
         </div>
         <div class="previsao-secundaria">
@@ -58,5 +62,8 @@
     <footer class="rodape">
         <p>Desenvolvido por <a target="_blank" href="https://github.com/Sturion00">Sturion00</a></p>
     </footer>
+
+    <script src="script/script.js"></script>
+
 </body>
 </html>

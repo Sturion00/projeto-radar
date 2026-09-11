@@ -1,12 +1,26 @@
 const apiKey = '0e7292031e57d5fd6ec254f6f07c0676'
-const url = `https://api.openweathermap.org/data/2.5/weather?q=marialva&appid=${apiKey}&lang=pt-br&units=metric`
 
 async function apiCall() {
+    const nomeCidade = document.getElementById('txtproc')
+    
+    if (!nomeCidade.value.trim()) {
+        alert('informe uma cidade')
+        nomeCidade.focus()
+        return
+    }
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(nomeCidade.value.trim())}&appid=${apiKey}&lang=pt-br&units=metric`
+    
     const resp = await fetch(url)
     if (resp.status === 200) {
         const obj = await resp.json()
-        console.log(obj)
+        //console.log(obj)
+        alert('OK')
+    } else {
+        alert(`Erro na busca: Código ${resp.status}`)
     }
 }
 
-apiCall()
+function procurar() {
+    apiCall()
+}
