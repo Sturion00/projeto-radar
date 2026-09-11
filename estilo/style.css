@@ -29,7 +29,6 @@ body {
     color: var(--cor-4);
     background: linear-gradient(#222533, #161822);
     height: 100vh;
-    margin: auto;
     font-size: 12pt;
 }
 
@@ -70,9 +69,10 @@ nav.navegador {
 article.card-principal {
     /* border: 1px solid red; */
     border-radius: 20px;
-    margin: 2%;
+    margin: 30px auto 20px auto;
     padding: 2%;
     width: 95%;
+    max-width: 1024px;
     background: linear-gradient(#161822, #222533);
 }
 
