@@ -9,12 +9,12 @@ async function apiCall() {
         return
     }
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(nomeCidade.value.trim())}&appid=${apiKey}&lang=pt-br&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(nomeCidade.value.trim())}&appid=${apiKey}&lang=pt_br&units=metric`
     
     const resp = await fetch(url)
     if (resp.status === 200) {
         const obj = await resp.json()
-        //console.log(obj)
+        console.log(obj)
         alert('OK')
     } else {
         alert(`Erro na busca: Código ${resp.status}`)
