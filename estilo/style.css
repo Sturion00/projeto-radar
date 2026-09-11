@@ -69,7 +69,6 @@ article.card-principal {
     border-radius: 20px;
     margin: 2%;
     padding: 2%;
-    display: flex;
     width: 95%;
     background: linear-gradient(#161822, #222533);
 }
@@ -77,8 +76,10 @@ article.card-principal {
 div.barra-procura {
     border: 1px solid rgb(194, 40, 199);
     height: 5%;
-    gap: 5px;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 div>input {    
@@ -101,8 +102,15 @@ div>input#btn-proc:hover {
     opacity: 50%;
 }
 
-div.info {
+div.previsao-principal {
     border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+div.icon-prev#info-principal {
+    background-color: aliceblue;
 }
 
 footer.rodape {
