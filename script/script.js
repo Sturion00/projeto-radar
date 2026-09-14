@@ -14,11 +14,32 @@ async function apiCall() {
     const resp = await fetch(url)
     if (resp.status === 200) {
         const obj = await resp.json()
-        console.log(obj)
-        alert('OK')
+
+        mostrarNaTela({
+            cidade: obj.name,
+            pais: obj.sys.country,
+            temperatura: obj.main.temp,
+            temperaturaMax: obj.main.temp_max,
+            temperaturaMin: obj.main.temp_min,
+            presao: obj.main.pressure,
+            solNasc: obj.sys.sunrise,
+            solPor: obj.sys.sunset,
+            descricao: obj.weather[0].description,
+            descIcon: obj.weather[0].icon,
+            humidade: obj.main.humidity,
+            ventoVel: obj.wind.speed
+        })
     } else {
         alert(`Erro na busca: Código ${resp.status}`)
+        return
     }
+}
+
+function mostrarNaTela(obj) {
+    document.querySelector('p#desc').innerHTML = `${obj.descricao.toUpperCase()}`
+    document.querySelector('p#temp').innerHTML = `Temperatura:${obj.temperatura.toFixed(1).replace('.', ',')}C°`
+    document.querySelector('p#humid').innerHTML = `Humidade:${obj.humidade}%`
+
 }
 
 function procurar() {
