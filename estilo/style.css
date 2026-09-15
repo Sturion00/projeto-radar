@@ -83,6 +83,14 @@ div.barra-procura {
     gap: 5px;
 }
 
+h2#cidade {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--fonte-sec);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
 div>form>input {    
     border: none;
     outline: none;
@@ -155,7 +163,7 @@ div.resumo-principal>p#humid {
 div.previsao-secundaria {
     margin: 20px 0px;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(3, 30%);
     justify-content: center;
     gap: 20px;
     font-size: .8rem;

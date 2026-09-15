@@ -16,17 +16,17 @@ async function apiCall() {
         const obj = await resp.json()
 
         mostrarNaTela({
-            cidade: obj.name,
-            pais: obj.sys.country,
-            temperatura: obj.main.temp,
+            cidade: obj.name, // ja foi
+            pais: obj.sys.country, // ja foi
+            temperatura: obj.main.temp, // ja foi
             temperaturaMax: obj.main.temp_max,
             temperaturaMin: obj.main.temp_min,
             presao: obj.main.pressure,
             solNasc: obj.sys.sunrise,
             solPor: obj.sys.sunset,
-            descricao: obj.weather[0].description,
-            descIcon: obj.weather[0].icon,
-            humidade: obj.main.humidity,
+            descricao: obj.weather[0].description, // ja foi
+            descIcon: obj.weather[0].icon, // ja foi
+            humidade: obj.main.humidity, // ja foi
             ventoVel: obj.wind.speed
         })
     } else {
@@ -36,9 +36,14 @@ async function apiCall() {
 }
 
 function mostrarNaTela(obj) {
+    document.querySelector('h2#cidade').innerHTML = `${obj.cidade}-${obj.pais}`
+
     document.querySelector('p#desc').innerHTML = `${obj.descricao.toUpperCase()}`
     document.querySelector('p#temp').innerHTML = `${obj.temperatura.toFixed(1).replace('.', ',')}<sup>C°</sup>`
     document.querySelector('p#humid').innerHTML = `Humidade:${obj.humidade}%`
+    document.querySelector('img#img').setAttribute('src', `https://openweathermap.org/payload/api/media/file/${obj.descIcon}.png`)
+
+    document.querySelector('p#press').innerHTML = `${obj.presao}hPa`
 
 }
 
