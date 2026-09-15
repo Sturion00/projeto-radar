@@ -14,7 +14,7 @@
     --cor-6: #212431;
     --gradiente2: linear-gradient(#222533, #161822);
     --gradiente1: linear-gradient(#161822,#222533);
-    --fonte-tema: 'Sigokae Demo';
+    --fonte-tema: 'MedievalSharp', cursive;
     --fonte-sec: 'Segoe ui';
 }
 
@@ -39,11 +39,10 @@ header {
 }
 
 header>h1 {
-
     font-size: clamp(2.4rem, 7vw, 3.5rem);
     color: var(--cor-5);
     font-family: var(--fonte-tema);
-    padding: 5px;
+    padding: 10px;
 }
 
 nav.navegador {
@@ -128,13 +127,14 @@ div.icon-prev {
 }
 
 img#img {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 7rem;
     margin-top: -20px;
 }
 
 div.icon-prev>p#desc {
     margin-top: -20px;
+    font-weight: bolder;
 }
 
 div.resumo-principal {
