@@ -37,11 +37,12 @@ async function apiCall() {
 
 function mostrarNaTela(obj) {
     document.querySelector('p#desc').innerHTML = `${obj.descricao.toUpperCase()}`
-    document.querySelector('p#temp').innerHTML = `Temperatura:${obj.temperatura.toFixed(1).replace('.', ',')}C°`
+    document.querySelector('p#temp').innerHTML = `${obj.temperatura.toFixed(1).replace('.', ',')}<sup>C°</sup>`
     document.querySelector('p#humid').innerHTML = `Humidade:${obj.humidade}%`
 
 }
 
 function procurar() {
     apiCall()
+    
 }

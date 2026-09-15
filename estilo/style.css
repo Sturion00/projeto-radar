@@ -29,7 +29,6 @@ body {
     color: var(--cor-4);
     background: linear-gradient(#222533, #161822);
     height: 100vh;
-    font-size: 12pt;
 }
 
 header {
@@ -108,9 +107,10 @@ div>form>input#btn-proc:hover {
 div.previsao-principal {
     /* border: 1px solid white; */
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, 45%);
     gap: 10px 10px;
     justify-content: center;
+    font-size: .8rem;
 }
 
 div#info-principal {
@@ -119,15 +119,30 @@ div#info-principal {
     padding: 10px;
 }
 
-div.icon-prev#info-principal {
-    text-align: right;
+div.icon-prev {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
-div.resumo-principal#info-principal {
-    text-align: left;
+img#img {
+    /* border: 1px solid red; */
+    width: 7rem;
+    margin-top: -20px;
+}
+
+div.icon-prev>p#desc {
+    margin-top: -20px;
+}
+
+div.resumo-principal {
+    border: 1px solid aqua;
+}
+
+div.resumo-principal#info-principal>p#temp {
+    font-size: 2rem;
 }
 
 div.previsao-secundaria {
