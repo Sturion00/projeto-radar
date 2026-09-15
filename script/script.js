@@ -43,8 +43,13 @@ function mostrarNaTela(obj) {
     document.querySelector('p#humid').innerHTML = `Humidade:${obj.humidade}%`
     document.querySelector('img#img').setAttribute('src', `https://openweathermap.org/payload/api/media/file/${obj.descIcon}.png`)
 
-    document.querySelector('p#press').innerHTML = `${obj.presao}hPa`
+    document.querySelector('p#press').innerHTML = `Pressão: ${obj.presao}hPa`
+    document.querySelector('p#tempMax').innerHTML = `Máxima: ${obj.temperaturaMax.toFixed(1).replace('.', ',')}<sup>C°</>`
+    document.querySelector('p#tempMin').innerHTML = `Mínima: ${obj.temperaturaMin.toFixed(1).replace('.', ',')}<sup>C°</>`
 
+    document.querySelector('p#ventoVel').innerHTML = `Vento: ${obj.ventoVel.toFixed(1).replace('.', ',')}Km/h`
+    document.querySelector('p#solNasc').innerHTML = `${obj.solNasc}`
+    document.querySelector('p#solPor').innerHTML = `${obj.solPor}`
 }
 
 function procurar() {

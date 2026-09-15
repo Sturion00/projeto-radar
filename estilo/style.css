@@ -141,6 +141,7 @@ img#img {
 }
 
 div.icon-prev>p#desc {
+    text-align: center;
     margin-top: -25px;
     font-size: 1.2rem;
 }
@@ -149,6 +150,8 @@ div.resumo-principal {
     /* border: 1px solid aqua; */
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -163,7 +166,7 @@ div.resumo-principal>p#humid {
 div.previsao-secundaria {
     margin: 20px 0px;
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 25%);
     justify-content: center;
     gap: 20px;
     font-size: .8rem;
