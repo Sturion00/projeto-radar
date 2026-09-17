@@ -91,7 +91,7 @@ h2#cidade {
     font-size: 1.7rem;
 }
 
-div>form>input {    
+div>form>input, button {    
     border: none;
     outline: none;
     padding: 10px;
@@ -103,11 +103,11 @@ div>form>input#txtproc {
     width: 200px;
 }
 
-div>form>input#btn-proc {
+div>form>button#btn {
     transition: opacity .2s;
 }
 
-div>form>input#btn-proc:hover {
+div>form>button#btn:hover {
     opacity: 50%;
 }
 
